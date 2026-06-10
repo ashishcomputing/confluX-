@@ -1,6 +1,6 @@
 # ConfluX+
 
-**Advanced ICT + SMC + X1_AI Confluence Indicator for TradingView**
+**Advanced ICT + SMC + XAI Confluence Indicator for TradingView**
 
 *by ASHFX*
 
