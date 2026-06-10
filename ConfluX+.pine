@@ -594,9 +594,13 @@ displayStructure(bool internal = false, line ibl, label iblb, line ibe, label ib
 
         if displayCondition
             if internal
-                [ibl, iblb] := drawStructure(p_ivot, tag, bullishColor, lineStyle, label.style_label_down, labelSize, ibl, iblb)
+                [new_ibl, new_iblb] = drawStructure(p_ivot, tag, bullishColor, lineStyle, label.style_label_down, labelSize, ibl, iblb)
+                ibl := new_ibl
+                iblb := new_iblb
             else
-                [sbl, sblb] := drawStructure(p_ivot, tag, bullishColor, lineStyle, label.style_label_down, labelSize, sbl, sblb)
+                [new_sbl, new_sblb] = drawStructure(p_ivot, tag, bullishColor, lineStyle, label.style_label_down, labelSize, sbl, sblb)
+                sbl := new_sbl
+                sblb := new_sblb
 
         if (internal and showInternalOrderBlocksInput) or (not internal and showSwingOrderBlocksInput)
             storeOrdeBlock(p_ivot,internal,BULLISH)
@@ -622,9 +626,13 @@ displayStructure(bool internal = false, line ibl, label iblb, line ibe, label ib
         
         if displayCondition
             if internal
-                [ibe, ibeb] := drawStructure(p_ivot, tag, bearishColor, lineStyle, label.style_label_up, labelSize, ibe, ibeb)
+                [new_ibe, new_ibeb] = drawStructure(p_ivot, tag, bearishColor, lineStyle, label.style_label_up, labelSize, ibe, ibeb)
+                ibe := new_ibe
+                ibeb := new_ibeb
             else
-                [sbe, sbeb] := drawStructure(p_ivot, tag, bearishColor, lineStyle, label.style_label_up, labelSize, sbe, sbeb)
+                [new_sbe, new_sbeb] = drawStructure(p_ivot, tag, bearishColor, lineStyle, label.style_label_up, labelSize, sbe, sbeb)
+                sbe := new_sbe
+                sbeb := new_sbeb
 
         if (internal and showInternalOrderBlocksInput) or (not internal and showSwingOrderBlocksInput)
             storeOrdeBlock(p_ivot,internal,BEARISH)
