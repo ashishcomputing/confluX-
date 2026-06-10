@@ -1,1 +1,1 @@
-The updated README content with the new section for the dedicated OB script.
+The updated README with versioning and v1.1 details.
