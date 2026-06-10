@@ -1,1 +1,1 @@
-[Updated README with closing/published section]
+[Final polished README]
