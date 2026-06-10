@@ -1,1 +1,1 @@
-The updated README with versioning and v1.1 details.
+[Updated README with closing/published section]
