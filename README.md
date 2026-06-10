@@ -1,6 +1,6 @@
 # ConfluX+
 
-**Advanced ICT + SMC + XAI Confluence Indicator for TradingView**
+**Advanced ICT + SMC + X1_AI Confluence Indicator for TradingView**
 
 *by ASHFX*
 
@@ -188,6 +188,10 @@ https://github.com/ashishcomputing/confluX-
 The project is now closed. All codes have been crosschecked for syntax and logical issues (no further errors detected in the final pass). Future tweaks can start a v1.2 branch if needed.
 
 Thank you for the iterative refinements — the indicator now has robust, volumized Order Blocks while staying true to the original ConfluX+ design.
+
+Pull requests, issues, and feature suggestions (or more codes to learn from) are welcome!
+
+Current active version in main ConfluX+.pine reflects the latest refinements.
 
 ---
 

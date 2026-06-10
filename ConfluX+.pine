@@ -286,6 +286,8 @@ var trailingExtremes trailing       = trailingExtremes.new()
 // @variable                                storage for orderBlock UDTs (swing order blocks)
 var array<orderBlock> swingOrderBlocks      = array.new<orderBlock>()
 // @variable                                storage for orderBlock UDTs (internal order blocks)
+var array<orderBlock> internalOrderBlocks   = array.new<orderBlock>()
+// @variable                                storage for swing order blocks boxes
 var array<box> swingOrderBlocksBoxes        = array.new<box>()
 // @variable                                storage for internal order blocks boxes
 var array<box> internalOrderBlocksBoxes     = array.new<box>()
@@ -683,8 +685,6 @@ displayStructure(bool internal = false, line ibl, label iblb, line ibe, label ib
                 ibeb := new_ibeb
             else
                 [new_sbe, new_sbeb] = drawStructure(p_ivot, tag, bearishColor, lineStyle, label.style_label_up, labelSize, sbe, sbeb)
-                sbe := new_sbe
-                sbeb := new_sbeb
 
         if (internal and showInternalOrderBlocksInput) or (not internal and showSwingOrderBlocksInput)
             storeOrderBlock(p_ivot, internal, BEARISH)
@@ -750,7 +750,7 @@ drawLevels(string timeframe, bool sameTimeframe, string style, color levelColor)
     float parsedBottom      = sameTimeframe ? low : bottomLevel    
 
     int parsedLeftTime      = sameTimeframe ? time : leftTime
-    int parsedRightTime     = sameTimeframe ? time : rightTime
+    int parsedRightTime      = sameTimeframe ? time : rightTime
 
     int parsedTopTime       = time
     int parsedBottomTime    = time
